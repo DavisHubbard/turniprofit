@@ -27,7 +27,10 @@ export default {
         ULWJ61PQ9: "Shoeman",
         UM532106A: "Max",
         U010T1GNHP1: "Laura",
-        UM5RY5UDU: "Adam"
+        UM5RY5UDU: "Adam",
+        UN4N71EMB: "Alex Wong",
+        ULT0JB92P: "Alex J",
+        URGUP061Y: "Drew"
       },
       options: {
         chart: {
