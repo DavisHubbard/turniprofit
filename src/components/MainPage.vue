@@ -30,7 +30,8 @@ export default {
         UM5RY5UDU: "Adam",
         UN4N71EMB: "Alex Wong",
         ULT0JB92P: "Alex J",
-        URGUP061Y: "Drew"
+        URGUP061Y: "Drew",
+        U010F1DSQ6P: "Bo"
       },
       options: {
         chart: {
