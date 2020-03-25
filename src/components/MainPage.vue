@@ -55,25 +55,32 @@ export default {
         console.log("Sorted Days: ", days);
         for (let i = 0; i < days.length; i++) {
           let date = days[i].date;
-          let mornPrices = [date + " M"];
-          let evePrices = [date + " E"];
-          for (let j = 0; j < this.orderedUsers.length; j++) {
-            let userId = this.orderedUsers[j];
-            if (userId in days[i].morning) {
-              mornPrices.push(parseInt(days[i].morning[userId].price));
-            } else {
-              mornPrices.push(0);
+          if ("morning" in days[i]) {
+            let mornPrices = [date + " M"];
+            for (let j = 0; j < this.orderedUsers.length; j++) {
+              let userId = this.orderedUsers[j];
+              if (userId in days[i].morning) {
+                mornPrices.push(parseInt(days[i].morning[userId].price));
+              } else {
+                mornPrices.push(0);
+              }
             }
-            if (userId in days[i].evening) {
-              evePrices.push(parseInt(days[i].evening[userId].price));
-            } else {
-              evePrices.push(0);
-            }
+            this.turnipData.push(mornPrices);
+            console.log("Morning Prices: ", mornPrices);
           }
-          console.log("Morning Prices: ", mornPrices);
-          console.log("Evening Prices: ", evePrices);
-          this.turnipData.push(mornPrices);
-          this.turnipData.push(evePrices);
+          if ("evening" in days[i]) {
+            let evePrices = [date + " E"];
+            for (let j = 0; j < this.orderedUsers.length; j++) {
+              let userId = this.orderedUsers[j];
+              if (userId in days[i].evening) {
+                evePrices.push(parseInt(days[i].evening[userId].price));
+              } else {
+                evePrices.push(0);
+              }
+            }
+            this.turnipData.push(evePrices);
+            console.log("Evening Prices: ", evePrices);
+          }
         }
       });
     });
