@@ -22,7 +22,19 @@ export default {
       TOKEN: "xoxb-710610623249-1022992123159-ryZzWGBeOCqFPyW45CKCqonI",
       bot: null,
       turnipData: {},
-      idToUser: {},
+      idToUser: {
+        UM762HAKZ: "Willard",
+        U0108CJ77JN: "Hayden",
+        ULXAU74AV: "Davis",
+        ULWJ61PQ9: "Shoeman",
+        UM532106A: "Max",
+        U010T1GNHP1: "Laura",
+        UM5RY5UDU: "Adam",
+        UN4N71EMB: "Alex Wong",
+        ULT0JB92P: "Alex J",
+        URGUP061Y: "Drew",
+        U010F1DSQ6P: "Bo"
+      },
       options: {
         chart: {
           zoom: { enabled: false },
@@ -37,13 +49,14 @@ export default {
     };
   },
   mounted() {
-    const Slack = require("slack");
-    const token = this.TOKEN;
-    this.bot = new Slack({ token });
-    this.bot.conversations
-      .members({ channel: "C010KUBA9V5" })
-      .then(this.buildUserList)
-      .catch(console.error);
+    // const Slack = require("slack");
+    // const token = this.TOKEN;
+    // this.bot = new Slack({ token });
+    // this.bot.conversations
+    //   .members({ channel: "C010KUBA9V5" })
+    //   .then(this.buildUserList)
+    //   .catch(console.error);
+    this.getPriceData();
   },
   methods: {
     getPriceData: function() {
