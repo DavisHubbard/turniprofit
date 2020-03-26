@@ -19,7 +19,6 @@ export default {
   },
   data: function() {
     return {
-      TOKEN: "xoxb-710610623249-1022992123159-ryZzWGBeOCqFPyW45CKCqonI",
       bot: null,
       turnipData: {},
       idToUser: {
