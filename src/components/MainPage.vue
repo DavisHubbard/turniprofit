@@ -22,19 +22,7 @@ export default {
       TOKEN: "xoxb-710610623249-1022992123159-ryZzWGBeOCqFPyW45CKCqonI",
       bot: null,
       turnipData: {},
-      idToUser: {
-        // UM762HAKZ: "Willard",
-        // U0108CJ77JN: "Hayden",
-        // ULXAU74AV: "Davis",
-        // ULWJ61PQ9: "Shoeman",
-        // UM532106A: "Max",
-        // U010T1GNHP1: "Laura",
-        // UM5RY5UDU: "Adam",
-        // UN4N71EMB: "Alex Wong",
-        // ULT0JB92P: "Alex J",
-        // URGUP061Y: "Drew",
-        // U010F1DSQ6P: "Bo"
-      },
+      idToUser: {},
       options: {
         chart: {
           zoom: { enabled: false },
