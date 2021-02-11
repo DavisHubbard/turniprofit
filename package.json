@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@slack/web-api": "^5.8.0",
-    "apexcharts": "^3.17.0",
+    "apexcharts": "^3.24.0",
     "core-js": "^3.6.4",
     "jquery": "^3.4.1",
     "slack": "^11.0.2",
